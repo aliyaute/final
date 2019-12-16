@@ -1,0 +1,56 @@
+---
+headline: "China turns to Canada as US lobster market declines"
+subhead: "Gulf of Maine is the only source of the American Lobster, but while Maine loses its revenue due to tariffs, Canada comes out as the winner in the Trade War"
+published_date: "December 14, 2019"
+site: "http://www.littlecolumns.com"
+url: "http://littlecolumns.com/learn/d3-javascript-tooling/"
+author:
+    name: "Aliya Uteuova"
+analytics": ""
+
+
+---
+<!-- 
+  This line means, use default.hbs layout from src/html/layouts/
+-->
+
+{{!< default}}
+
+<!-- 
+  Put some content into an .hbs file inside of /partials, 
+  and you can just throw it in anywhere!
+-->
+
+{{> story/basic }}
+
+<!-- 
+  Charts are exactly the same.
+-->
+
+{{> story/chart }}
+
+<!-- 
+  If you want to use something exported from ai2html...
+    1. Rename the exported .html file to .hbs
+    2. Put the .hbs file inside of 'html/story'
+    3. Move the exported images to the images folder
+    4. Include the partial normally like below
+  -->
+
+{{> story/illustrator_demo }}
+
+<!--
+  You can also put the actual HTML here if you really want to,
+  although it's a little less organized looking
+-->
+
+<div class="story-body">
+    <h2>Difference in US lobster sales to China before and after July 2018 Tariffs  </h2>
+ <p>
+This forced the lobster dealers to re-route their goods to Canada, the dominant exporter of American lobster today. Canada is the obvious winner in the US-China Trade War and the climate change, which is forcing lobster to swim northward, is playing into Canadian fishermen's favour
+</p>
+</div>
+
+<script src='scripts/scrollytelling.js'></script>
+
+
